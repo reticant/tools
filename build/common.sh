@@ -245,7 +245,7 @@ fi
 
 # define and bootstrap target directories
 export STAGEDIR="${STAGEDIRPREFIX}${CONFIGDIR}/${PRODUCT_ARCH}"
-export TARGETDIRPREFIX="/usr/local/opnsense/build"
+export TARGETDIRPREFIX="/usr/local/reticent/build"
 export TARGETDIR="${TARGETDIRPREFIX}/${PRODUCT_SETTINGS}/${PRODUCT_ARCH}"
 export IMAGESDIR="${TARGETDIR}/images"
 export LOGSDIR="${TARGETDIR}/logs"
@@ -566,7 +566,7 @@ setup_chroot()
 
 setup_version()
 {
-	VERSIONDIR="${2}/usr/local/opnsense/version"
+	VERSIONDIR="${2}/usr/local/reticent/version"
 
 	# clear previous in case of rename
 	rm -rf ${VERSIONDIR}

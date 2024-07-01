@@ -75,13 +75,13 @@ setup_stage ${STAGEDIR} work
 setup_set ${STAGEDIR}/work ${BASE_OBJ}
 
 # needs to be in obsolete file list for control purposes
-mkdir -p ${STAGEDIR}/work/usr/local/opnsense/version
-touch ${STAGEDIR}/work/usr/local/opnsense/version/base
-touch ${STAGEDIR}/work/usr/local/opnsense/version/base.arch
-touch ${STAGEDIR}/work/usr/local/opnsense/version/base.hash
-touch ${STAGEDIR}/work/usr/local/opnsense/version/base.mtree
-touch ${STAGEDIR}/work/usr/local/opnsense/version/base.obsolete
-touch ${STAGEDIR}/work/usr/local/opnsense/version/base.size
+mkdir -p ${STAGEDIR}/work/usr/local/reticent/version
+touch ${STAGEDIR}/work/usr/local/reticent/version/base
+touch ${STAGEDIR}/work/usr/local/reticent/version/base.arch
+touch ${STAGEDIR}/work/usr/local/reticent/version/base.hash
+touch ${STAGEDIR}/work/usr/local/reticent/version/base.mtree
+touch ${STAGEDIR}/work/usr/local/reticent/version/base.obsolete
+touch ${STAGEDIR}/work/usr/local/reticent/version/base.size
 
 echo -n ">>> Generating obsolete file list... "
 

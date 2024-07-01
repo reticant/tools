@@ -45,9 +45,9 @@ for ARG in ${@}; do
 		echo ">>> Repacking base set..."
 		BASESET=$(find_set base)
 		setup_set ${STAGEDIR}/work ${BASESET}
-		cp ${STAGEDIR}/work/usr/local/opnsense/version/${ARG}.obsolete \
+		cp ${STAGEDIR}/work/usr/local/reticent/version/${ARG}.obsolete \
 		    ${STAGEDIR}/obsolete
-		PRODUCT_HASH=$(cat ${STAGEDIR}/work/usr/local/opnsense/version/${ARG}.hash)
+		PRODUCT_HASH=$(cat ${STAGEDIR}/work/usr/local/reticent/version/${ARG}.hash)
 		setup_version ${STAGEDIR} ${STAGEDIR}/work ${ARG} ${STAGEDIR}/obsolete
 		rm ${BASESET}
 		generate_set ${STAGEDIR}/work ${BASESET}
@@ -81,7 +81,7 @@ for ARG in ${@}; do
 			KERNEL_NAME="kernel"
 		fi
 		setup_set ${STAGEDIR}/work ${KERNELSET}
-		PRODUCT_HASH=$(cat ${STAGEDIR}/work/usr/local/opnsense/version/${ARG}.hash)
+		PRODUCT_HASH=$(cat ${STAGEDIR}/work/usr/local/reticent/version/${ARG}.hash)
 		setup_version ${STAGEDIR} ${STAGEDIR}/work ${ARG}
 		rm ${KERNELSET}
 		generate_set ${STAGEDIR}/work ${KERNELSET}

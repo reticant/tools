@@ -34,7 +34,7 @@ SELF=rebase
 setup_stage ${STAGEDIR}
 
 BASESET=$(find_set base)
-OBSOLETE=/usr/local/opnsense/version/base.obsolete
+OBSOLETE=/usr/local/reticent/version/base.obsolete
 
 tar -tf ${BASESET} | sed -e 's/^\.//g' -e '/\/$/d' | \
     grep -v -e '\.mtree\.sig$' -e '\.abi_hint$' | \
