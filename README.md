@@ -24,7 +24,7 @@ by setting ROOTDIR.  For example:
 
     # mkdir -p /tmp/reticent
     # cd /tmp/reticent
-    # git clone https://github.com/opnsense/tools
+    # git clone https://github.com/reticant/tools
     # cd tools
     # env ROOTDIR=/tmp/reticent make update
 
